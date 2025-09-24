@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Jakiego kebaba lubisz najbardziej?</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #111;
+      color: #fff;
+      flex-direction: column;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    .btn {
+      margin: 10px;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+    }
+    .tak {
+      background-color: #4caf50;
+      color: white;
+    }
+    .nie {
+      background-color: #f44336;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>Jakiego kebaba lubisz najbardziej?</h1>
+  <button class="btn kurczak" onclick="sigma()">Kurczak</button>
+  <button class="btn wołowina" onclick="sigma()">Wołowina</button>
+  <button class="btn baranina" onclick="sigma()">Baranina</button>
+  <button class="btn vege" onclick="sigma()">Vege</button>
+  <button class="btn dzban" onclick="openSong()">NIENAWIDZĘ KEBABÓW</button>
+
+  <script>
+    const link = "https://youtu.be/UBtCejQ62fk?si=TI9vIwoNWF93zhoQ";
+
+    function openSong() {
+      window.open(link, "_blank");
+    }
+    
+    function sigma() {
+    <p>No i sigma</p>
+    }
+
+    // Próba uruchomienia linku przy wyjściu ze strony
+    window.addEventListener("beforeunload", function() {
+      window.open(link, "_blank");
+    });
+  </script>
+</body>
+</html>
